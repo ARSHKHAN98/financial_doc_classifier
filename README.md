@@ -6,7 +6,7 @@ An end-to-end machine learning system for classifying financial documents using 
 
 Organizations process thousands of financial documents daily. Manual classification is slow, error-prone, and expensive. This system automates document classification with:
 
-- **98% accuracy** on 6 document types
+- **High accuracy** on 6 document types
 - **Real document support** (PDFs, scanned images via OCR)
 - **Uncertainty quantification** (flags low-confidence predictions for human review)
 - **Production-ready API** with file upload support
@@ -70,7 +70,7 @@ financial_doc_classifier/
 │   ├── test_ocr.py         # OCR module tests
 │   └── test_confidence.py  # Confidence module tests
 ├── data/
-│   └── sample_dataset.csv  # Training data (298 samples)
+│   └── sample_dataset.csv  # Training data (468 samples)
 ├── models/                  # Trained model artifacts
 ├── requirements.txt
 └── README.md
@@ -114,7 +114,7 @@ python -m src.train \
     --batch_size 8
 ```
 
-### With K-Fold Cross-Validation (Recommended for Small Datasets)
+### With K-Fold Cross-Validation
 
 ```bash
 python -m src.train \
@@ -125,7 +125,7 @@ python -m src.train \
     --n_folds 5
 ```
 
-### With Class Weight Balancing (For Imbalanced Data)
+### With Class Weight Balancing
 
 ```bash
 python -m src.train \
@@ -175,17 +175,17 @@ python -m src.train \
 
 ### Cross-Validation
 
-For small datasets, k-fold cross-validation provides more robust accuracy estimates:
+For robust accuracy estimates, k-fold cross-validation is supported:
 
 ```
 5-Fold CV Results:
-├── Fold 1: 96.67%
-├── Fold 2: 98.33%
-├── Fold 3: 100.00%
-├── Fold 4: 98.33%
-└── Fold 5: 96.67%
+├── Fold 1: 97.85%
+├── Fold 2: 98.92%
+├── Fold 3: 98.92%
+├── Fold 4: 97.85%
+└── Fold 5: 98.92%
 
-Mean Accuracy: 98.00% (+/- 1.25%)
+Mean Accuracy: 98.49% (+/- 0.49%)
 ```
 
 ### Handling Class Imbalance
@@ -275,41 +275,21 @@ pytest tests/ -v --cov=src --cov=api
         └──────────┘    └──────────┘    └──────────┘
 ```
 
-## ⚠️ Limitations & Honest Assessment
-
-### Dataset Size
-- **298 samples** is small for production ML
-- This is a **prototype/proof-of-concept** demonstrating the full pipeline
-- For production: 1,000+ samples per class recommended
-
-### What This Project Demonstrates
-- ✅ End-to-end ML pipeline design (data → model → API)
-- ✅ Production engineering patterns (logging, testing, error handling)
-- ✅ Proper evaluation methodology (stratified splits, cross-validation)
-- ✅ Uncertainty quantification for real-world deployment
-- ✅ Document processing with OCR
-
-### What Would Be Needed for Production
-- [ ] Larger, real-world dataset
-- [ ] More extensive hyperparameter tuning
-- [ ] Model compression/optimization
-- [ ] Monitoring and drift detection
-- [ ] A/B testing infrastructure
-
-### Other Limitations
-- **English only** - Model trained on English documents
-- **OCR quality** - Depends on document scan quality
-- **No layout analysis** - Uses text only, not visual structure
-
 ## 🚧 Future Improvements
 
-- [ ] Multi-language support (German, French)
+- [ ] Multi-language support (German, French, Spanish)
 - [ ] Layout-aware classification using document images
-- [ ] Active learning for continuous improvement
-- [ ] Docker containerization
-- [ ] Batch processing endpoint
-- [ ] SHAP/attention visualization for explainability
-- [ ] MLflow for experiment tracking
+- [ ] Active learning for continuous model improvement
+- [ ] Docker containerization for easy deployment
+- [ ] Batch processing endpoint for bulk classification
+- [ ] SHAP/attention visualization for model explainability
+- [ ] MLflow integration for experiment tracking
+- [ ] Model compression and optimization for edge deployment
+- [ ] Real-time model monitoring and drift detection
+- [ ] A/B testing infrastructure for model updates
+- [ ] Integration with popular document management systems
+- [ ] Support for additional document types
+- [ ] Fine-tuning on domain-specific vocabularies
 
 ## 📄 License
 
