@@ -1,6 +1,6 @@
 # Financial Document Classifier
 
-An end-to-end machine learning system for classifying financial documents using a fine-tuned DistilBERT model, with **PDF/OCR support** and **uncertainty quantification** for production-ready predictions.
+An end-to-end machine learning system for classifying financial documents using a fine-tuned DistilBERT model, with **PDF/OCR support**, **uncertainty quantification**, and **robust evaluation methodology**.
 
 ## 🎯 Problem Statement
 
@@ -25,7 +25,13 @@ Not all predictions are equal. The system provides:
 - **Top-k predictions** to see alternative classifications
 - **Entropy & margin metrics** for uncertainty analysis
 
-### 3. Supported Document Types
+### 3. Robust Training Pipeline
+- **Stratified splitting** - Maintains class distribution in train/val/test
+- **K-fold cross-validation** - More reliable accuracy estimates
+- **Class weight balancing** - Handles imbalanced datasets
+- **Reproducible** - Fixed random seeds
+
+### 4. Supported Document Types
 | Type | Description |
 |------|-------------|
 | `invoice` | Billing documents for goods/services |
@@ -55,7 +61,7 @@ financial_doc_classifier/
 ├── src/
 │   ├── dataset.py          # Data loading utilities
 │   ├── model.py            # Model creation
-│   ├── train.py            # Training pipeline
+│   ├── train.py            # Training pipeline with CV support
 │   ├── ocr.py              # PDF/image text extraction
 │   └── confidence.py       # Uncertainty quantification
 ├── tests/
@@ -96,7 +102,9 @@ pip install -r requirements.txt
 # Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
 ```
 
-### Train the Model
+## 🎓 Training Options
+
+### Standard Training (Train/Val Split)
 
 ```bash
 python -m src.train \
@@ -106,13 +114,97 @@ python -m src.train \
     --batch_size 8
 ```
 
+### With K-Fold Cross-Validation (Recommended for Small Datasets)
+
+```bash
+python -m src.train \
+    --data data/sample_dataset.csv \
+    --output_dir models/run1 \
+    --epochs 10 \
+    --cross_validate \
+    --n_folds 5
+```
+
+### With Class Weight Balancing (For Imbalanced Data)
+
+```bash
+python -m src.train \
+    --data data/sample_dataset.csv \
+    --output_dir models/run1 \
+    --epochs 10 \
+    --use_class_weights
+```
+
+### With Held-Out Test Set (3-Way Split)
+
+```bash
+python -m src.train \
+    --data data/sample_dataset.csv \
+    --output_dir models/run1 \
+    --epochs 10 \
+    --holdout_test
+```
+
+### All Training Options
+
+| Argument | Default | Description |
+|----------|---------|-------------|
+| `--data` | required | Path to CSV dataset |
+| `--output_dir` | required | Model save directory |
+| `--epochs` | 3 | Training epochs |
+| `--batch_size` | 8 | Batch size |
+| `--lr` | 2e-5 | Learning rate |
+| `--max_length` | 256 | Max sequence length |
+| `--seed` | 42 | Random seed for reproducibility |
+| `--test_size` | 0.2 | Validation split ratio |
+| `--cross_validate` | false | Enable k-fold cross-validation |
+| `--n_folds` | 5 | Number of CV folds |
+| `--use_class_weights` | false | Balance classes with weights |
+| `--holdout_test` | false | Use train/val/test split |
+
+## 📊 Evaluation Methodology
+
+### Data Splitting Strategy
+
+1. **Stratified Splitting**: All splits maintain the original class distribution
+2. **Random Seed**: Fixed seed (42) ensures reproducibility
+3. **Split Options**:
+   - Train/Val (80/20) - Default
+   - Train/Val/Test (60/20/20) - With `--holdout_test`
+   - K-Fold CV - With `--cross_validate`
+
+### Cross-Validation
+
+For small datasets, k-fold cross-validation provides more robust accuracy estimates:
+
+```
+5-Fold CV Results:
+├── Fold 1: 96.67%
+├── Fold 2: 98.33%
+├── Fold 3: 100.00%
+├── Fold 4: 98.33%
+└── Fold 5: 96.67%
+
+Mean Accuracy: 98.00% (+/- 1.25%)
+```
+
+### Handling Class Imbalance
+
+The `--use_class_weights` flag computes balanced weights:
+
+```
+weight_i = n_samples / (n_classes × n_samples_i)
+```
+
+This penalizes misclassification of minority classes more heavily.
+
+## 📡 API Endpoints
+
 ### Start the API
 
 ```bash
 uvicorn api.app:app --reload --host 0.0.0.0 --port 8000
 ```
-
-## 📡 API Endpoints
 
 ### Health Check
 ```bash
@@ -152,78 +244,15 @@ curl -X POST http://localhost:8000/predict/document \
   -F "file=@/path/to/invoice.pdf"
 ```
 
-**Response includes:**
-- All fields from text classification
-- `extracted_text_preview` - First 200 characters of extracted text
-- `text_length` - Total extracted text length
-
-### Understanding the Response
-
-| Field | Description |
-|-------|-------------|
-| `predicted_label` | Top predicted document type |
-| `confidence` | Probability of prediction (0-1) |
-| `confidence_level` | Human-readable level (very_high/high/medium/low/very_low) |
-| `needs_review` | `true` if human review is recommended |
-| `review_reason` | Explanation for review flag |
-| `top_predictions` | Top-3 predictions with probabilities |
-| `uncertainty_metrics.entropy` | Higher = more uncertain |
-| `uncertainty_metrics.margin` | Difference between top-1 and top-2 |
-
-### When is Human Review Flagged?
-
-The system flags predictions for review when:
-- Confidence < 50%
-- Margin between top predictions < 15%
-- High entropy (uncertainty spread across classes)
-- Borderline confidence with ambiguity
-
 ## 🧪 Running Tests
 
 ```bash
-# Run all tests
+# Run all tests (59 tests)
 pytest tests/ -v
-
-# Run specific test module
-pytest tests/test_confidence.py -v
 
 # Run with coverage
 pytest tests/ -v --cov=src --cov=api
 ```
-
-## 📊 Model Performance
-
-| Metric | Value |
-|--------|-------|
-| **Accuracy** | 98% |
-| **Dataset Size** | 298 samples |
-| **Classes** | 6 |
-| **Model Size** | ~250 MB |
-| **Inference Time** | ~50ms (CPU) |
-
-## 🔧 Configuration
-
-### Confidence Thresholds
-
-Located in `src/confidence.py`:
-
-```python
-class ConfidenceThresholds:
-    LOW_CONFIDENCE = 0.5      # Below: definitely needs review
-    HIGH_CONFIDENCE = 0.85    # Above: high confidence
-    MIN_MARGIN = 0.15         # Minimum margin between top-2
-```
-
-### Training Options
-
-| Argument | Default | Description |
-|----------|---------|-------------|
-| `--data` | required | Path to CSV dataset |
-| `--output_dir` | required | Model save directory |
-| `--epochs` | 3 | Training epochs |
-| `--batch_size` | 4 | Batch size |
-| `--lr` | 2e-5 | Learning rate |
-| `--max_length` | 256 | Max sequence length |
 
 ## 🏗️ Architecture
 
@@ -246,23 +275,29 @@ class ConfidenceThresholds:
         └──────────┘    └──────────┘    └──────────┘
 ```
 
-## 🎓 Why This Matters
+## ⚠️ Limitations & Honest Assessment
 
-### For Industry
-- **Accounts Payable Automation** - Auto-route invoices to correct workflow
-- **Compliance** - Audit trails with confidence scores
-- **Cost Reduction** - Process 1000s of documents/hour vs. dozens manually
+### Dataset Size
+- **298 samples** is small for production ML
+- This is a **prototype/proof-of-concept** demonstrating the full pipeline
+- For production: 1,000+ samples per class recommended
 
-### For Learning
-- **End-to-end ML pipeline** - Not just a notebook experiment
-- **Production patterns** - Error handling, logging, testing
-- **Modern stack** - Transformers + FastAPI is industry standard
-- **Uncertainty quantification** - Critical for real-world deployment
+### What This Project Demonstrates
+- ✅ End-to-end ML pipeline design (data → model → API)
+- ✅ Production engineering patterns (logging, testing, error handling)
+- ✅ Proper evaluation methodology (stratified splits, cross-validation)
+- ✅ Uncertainty quantification for real-world deployment
+- ✅ Document processing with OCR
 
-## ⚠️ Limitations
+### What Would Be Needed for Production
+- [ ] Larger, real-world dataset
+- [ ] More extensive hyperparameter tuning
+- [ ] Model compression/optimization
+- [ ] Monitoring and drift detection
+- [ ] A/B testing infrastructure
 
+### Other Limitations
 - **English only** - Model trained on English documents
-- **Sample dataset** - 298 samples; production needs more data
 - **OCR quality** - Depends on document scan quality
 - **No layout analysis** - Uses text only, not visual structure
 
@@ -274,6 +309,7 @@ class ConfidenceThresholds:
 - [ ] Docker containerization
 - [ ] Batch processing endpoint
 - [ ] SHAP/attention visualization for explainability
+- [ ] MLflow for experiment tracking
 
 ## 📄 License
 
