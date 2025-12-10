@@ -1,121 +1,299 @@
 text,label
-"Invoice #INV-2024-001 for consulting services rendered in January. Total amount due: $5,250.00","invoice"
-"Invoice #INV-2024-002 for software license subscription. Payment due within 30 days.","invoice"
-"This invoice covers the Q1 maintenance fees for your enterprise account.","invoice"
-"Invoice attached for the shipment of office supplies ordered on March 15th.","invoice"
-"Final invoice for project completion. Balance remaining: $12,500.","invoice"
-"Proforma invoice for upcoming service agreement renewal.","invoice"
-"Invoice #87234 for web development services - 40 hours at $150/hr","invoice"
-"Please remit payment for invoice INV-2024-156 within net 30 terms","invoice"
-"Attached invoice for cloud hosting services for the month of April","invoice"
-"Invoice for legal consultation services rendered on May 12-15, 2024","invoice"
-"Commercial invoice for international shipment of electronic components","invoice"
-"Recurring monthly invoice for SaaS platform subscription - Enterprise tier","invoice"
-"Invoice #2024-Q2-089 for quarterly security audit services","invoice"
-"Debit invoice for additional storage capacity provisioned last month","invoice"
-"Final milestone invoice for mobile app development project phase 3","invoice"
-"Invoice for conference room equipment installation and setup","invoice"
-"Service invoice covering annual HVAC maintenance contract","invoice"
-"Invoice INV-78543 for graphic design services - logo redesign project","invoice"
-"Expense reimbursement invoice for client travel - NYC business trip","invoice"
-"Invoice for translation services - technical documentation EN to DE","invoice"
-"Purchase Order PO-78234: Request for 500 units of industrial equipment.","purchase_order"
-"PO #2024-0892 for marketing materials. Delivery expected by end of month.","purchase_order"
-"Please process the attached purchase order for IT hardware refresh.","purchase_order"
-"Purchase order for catering services for the annual company retreat.","purchase_order"
-"Urgent PO: Office furniture for new headquarters expansion.","purchase_order"
-"Purchase requisition approved and converted to PO #2024-1105.","purchase_order"
-"PO-45678 for raw materials needed for Q3 production cycle","purchase_order"
-"Standing purchase order for monthly office supplies replenishment","purchase_order"
-"Purchase order #8923 for employee laptops - 25 units MacBook Pro","purchase_order"
-"Blanket PO for consulting services not to exceed $50,000 annually","purchase_order"
-"Emergency purchase order for replacement server hardware","purchase_order"
-"PO request for trade show booth materials and promotional items","purchase_order"
-"Purchase order for software licenses - Adobe Creative Cloud team plan","purchase_order"
-"Amended PO #2024-0456 with updated delivery address and quantities","purchase_order"
-"Purchase order for laboratory equipment and scientific instruments","purchase_order"
-"PO-99012 for bulk paper and printing supplies for fiscal year","purchase_order"
-"Capital expenditure purchase order for manufacturing equipment","purchase_order"
-"Service purchase order for annual IT support contract renewal","purchase_order"
-"Purchase order #7654 for safety equipment and PPE supplies","purchase_order"
-"Expedited PO for client presentation materials - rush delivery required","purchase_order"
-"Your monthly bank statement for March 2024 is now available for review.","bank_statement"
-"Bank statement summary: 47 transactions processed, ending balance $12,847.33","bank_statement"
-"Attached is your quarterly bank statement for accounts ending in 4521.","bank_statement"
-"Bank statement notification: unusual activity detected on your business account.","bank_statement"
-"Year-end bank statement with interest earned summary attached.","bank_statement"
-"Consolidated bank statement for all linked business accounts.","bank_statement"
-"Your e-statement for checking account is ready for download","bank_statement"
-"Monthly bank statement showing deposits, withdrawals, and fees","bank_statement"
-"Business savings account statement - interest accrued this period: $234.56","bank_statement"
-"Bank statement alert: Your account balance fell below minimum threshold","bank_statement"
-"Reconciliation statement for corporate money market account","bank_statement"
-"Wire transfer confirmation included in your monthly statement","bank_statement"
-"Bank statement for business line of credit - available balance update","bank_statement"
-"Multi-currency account statement showing USD, EUR, and GBP balances","bank_statement"
-"Statement of account for merchant services and payment processing","bank_statement"
-"Bank statement with itemized check images for your records","bank_statement"
-"Quarterly interest statement for business certificates of deposit","bank_statement"
-"Combined statement for all accounts under business banking relationship","bank_statement"
-"Bank statement showing automatic bill payments processed this month","bank_statement"
-"Account activity statement for corporate credit card transactions","bank_statement"
-"Tax Notice: Your estimated quarterly tax payment is due by April 15th.","tax_notice"
-"IRS Notice CP2000: Proposed changes to your 2023 tax return.","tax_notice"
-"State tax authority notice regarding outstanding balance on your account.","tax_notice"
-"Annual property tax assessment notice for fiscal year 2024-2025.","tax_notice"
-"Tax filing reminder: Extension deadline approaching for business returns.","tax_notice"
-"Notice of tax lien release for previously settled amounts.","tax_notice"
-"Sales tax audit notification - records requested for review period","tax_notice"
-"Payroll tax deposit reminder for quarterly federal taxes","tax_notice"
-"Notice of proposed adjustment to corporate income tax return","tax_notice"
-"State franchise tax annual report filing reminder","tax_notice"
-"VAT registration confirmation and compliance requirements notice","tax_notice"
-"Tax penalty assessment notice for late filing - appeal instructions enclosed","tax_notice"
-"Withholding tax reconciliation notice for calendar year 2023","tax_notice"
-"Property tax exemption application status update","tax_notice"
-"International tax treaty benefits claim acknowledgment","tax_notice"
-"Estimated tax underpayment penalty notice and calculation","tax_notice"
-"Business license tax renewal notice for the upcoming fiscal year","tax_notice"
-"Tax credit certification for research and development expenses","tax_notice"
-"Municipal tax assessment notice for commercial property","tax_notice"
-"Notice regarding changes to state tax withholding requirements","tax_notice"
-"Service Agreement Contract between ABC Corp and XYZ Consulting LLC.","contract"
-"Employment contract for the position of Senior Software Engineer.","contract"
-"Non-disclosure agreement for the upcoming product launch collaboration.","contract"
-"Lease contract renewal for office space at 123 Business Park Drive.","contract"
-"Master services agreement with amended payment terms.","contract"
-"Vendor contract for annual maintenance and support services.","contract"
-"Independent contractor agreement for freelance design services","contract"
-"Software licensing agreement for enterprise resource planning system","contract"
-"Partnership agreement between founding members of the joint venture","contract"
-"Distribution agreement granting exclusive rights for EMEA region","contract"
-"Consulting engagement letter outlining scope of work and deliverables","contract"
-"Subscription agreement for cloud-based project management platform","contract"
-"Asset purchase agreement for acquisition of business unit","contract"
-"Franchise agreement with operational guidelines and territory rights","contract"
-"Service level agreement defining uptime guarantees and support terms","contract"
-"Confidentiality agreement for due diligence process","contract"
-"Equipment lease agreement for office technology and machinery","contract"
-"Indemnification agreement for third-party software integration","contract"
-"Reseller agreement with pricing tiers and volume discounts","contract"
-"Amendment to existing contract extending term by 24 months","contract"
-"Thank you for contacting customer support. Your ticket #45892 has been resolved.","other"
-"Newsletter: Updates from our financial services team for Q2 2024.","other"
-"Reminder: Your account password will expire in 7 days.","other"
-"General correspondence regarding your recent inquiry about account features.","other"
-"Meeting notes from quarterly business review session.","other"
-"Internal memo regarding updated expense reporting procedures.","other"
-"Company announcement: New office location opening next quarter","other"
-"Training schedule for upcoming compliance certification program","other"
-"Feedback survey request for recent customer service interaction","other"
-"System maintenance notification - planned downtime this weekend","other"
-"Employee handbook updates effective from next fiscal year","other"
-"Invitation to annual shareholder meeting and proxy voting materials","other"
-"Press release announcing strategic partnership with technology firm","other"
-"Marketing brochure for new financial planning services","other"
-"Organizational chart update following recent restructuring","other"
-"Holiday schedule and office closure dates for upcoming year","other"
-"Welcome packet for new vendor onboarding process","other"
-"Agenda for upcoming board of directors meeting","other"
-"Customer satisfaction survey results and action plan summary","other"
-"Office relocation logistics and moving timeline communication","other"
+Invoice #INV-2024-001 for consulting services rendered in January. Total amount due: $5250.00,invoice
+Invoice #INV-2024-002 for software license subscription. Payment due within 30 days.,invoice
+This invoice covers the Q1 maintenance fees for your enterprise account.,invoice
+Invoice attached for the shipment of office supplies ordered on March 15th.,invoice
+Final invoice for project completion. Balance remaining: $12500.,invoice
+Proforma invoice for upcoming service agreement renewal.,invoice
+Invoice #87234 for web development services - 40 hours at $150/hr,invoice
+Please remit payment for invoice INV-2024-156 within net 30 terms,invoice
+Attached invoice for cloud hosting services for the month of April,invoice
+Invoice for legal consultation services rendered on May 12-15 2024,invoice
+Commercial invoice for international shipment of electronic components,invoice
+Recurring monthly invoice for SaaS platform subscription - Enterprise tier,invoice
+Invoice #2024-Q2-089 for quarterly security audit services,invoice
+Debit invoice for additional storage capacity provisioned last month,invoice
+Final milestone invoice for mobile app development project phase 3,invoice
+Invoice for conference room equipment installation and setup,invoice
+Service invoice covering annual HVAC maintenance contract,invoice
+Invoice INV-78543 for graphic design services - logo redesign project,invoice
+Expense reimbursement invoice for client travel - NYC business trip,invoice
+Invoice for translation services - technical documentation EN to DE,invoice
+Credit invoice adjustment for returned merchandise - order #45678,invoice
+Invoice for professional photography services at corporate event,invoice
+Billing invoice for managed IT services - monthly retainer fee,invoice
+Invoice #2024-0567 for data migration and system integration work,invoice
+Tax invoice for advertising campaign management services,invoice
+Invoice for executive coaching sessions - 10 hours completed,invoice
+Consolidated invoice for multiple purchase orders shipped together,invoice
+Invoice for website redesign project - final deliverables accepted,invoice
+Service invoice for annual fire safety inspection and certification,invoice
+Invoice #INV-89012 for HR consulting and recruitment services,invoice
+Billing statement invoice for legal retainer - Q2 2024,invoice
+Invoice for catering services at board meeting - 25 attendees,invoice
+Commercial invoice for customs clearance - shipment ID: SHP-456,invoice
+Invoice for SEO optimization services - 3 month engagement,invoice
+Final invoice for interior design consultation and planning,invoice
+Invoice #34521 for cybersecurity assessment and penetration testing,invoice
+Billing invoice for payroll processing services - 150 employees,invoice
+Invoice for video production services - corporate training materials,invoice
+Service invoice for fleet vehicle maintenance - 12 vehicles,invoice
+Invoice for architectural drawings and blueprint revisions,invoice
+Invoice #INV-2024-789 for market research and analysis report,invoice
+Billing invoice for accounting and bookkeeping services - monthly,invoice
+Invoice for trade show booth design and construction,invoice
+Commercial invoice for bulk raw materials shipment - 500kg,invoice
+Invoice #56789 for employee wellness program implementation,invoice
+Service invoice for HVAC system installation - new office wing,invoice
+Invoice for social media marketing campaign - Q1 results,invoice
+Final invoice for ERP system customization and deployment,invoice
+Invoice for corporate event planning and coordination services,invoice
+Billing invoice #2024-1234 for technical writing and documentation,invoice
+Purchase Order PO-78234: Request for 500 units of industrial equipment.,purchase_order
+PO #2024-0892 for marketing materials. Delivery expected by end of month.,purchase_order
+Please process the attached purchase order for IT hardware refresh.,purchase_order
+Purchase order for catering services for the annual company retreat.,purchase_order
+Urgent PO: Office furniture for new headquarters expansion.,purchase_order
+Purchase requisition approved and converted to PO #2024-1105.,purchase_order
+PO-45678 for raw materials needed for Q3 production cycle,purchase_order
+Standing purchase order for monthly office supplies replenishment,purchase_order
+Purchase order #8923 for employee laptops - 25 units MacBook Pro,purchase_order
+Blanket PO for consulting services not to exceed $50000 annually,purchase_order
+Emergency purchase order for replacement server hardware,purchase_order
+PO request for trade show booth materials and promotional items,purchase_order
+Purchase order for software licenses - Adobe Creative Cloud team plan,purchase_order
+Amended PO #2024-0456 with updated delivery address and quantities,purchase_order
+Purchase order for laboratory equipment and scientific instruments,purchase_order
+PO-99012 for bulk paper and printing supplies for fiscal year,purchase_order
+Capital expenditure purchase order for manufacturing equipment,purchase_order
+Service purchase order for annual IT support contract renewal,purchase_order
+Purchase order #7654 for safety equipment and PPE supplies,purchase_order
+Expedited PO for client presentation materials - rush delivery required,purchase_order
+Purchase order PO-2024-567 for networking equipment and cables,purchase_order
+Blanket purchase order for temporary staffing services,purchase_order
+PO for office renovation materials - flooring and paint supplies,purchase_order
+Purchase order #12345 for promotional merchandise and branded items,purchase_order
+Standing PO for janitorial supplies and cleaning products,purchase_order
+Purchase order for medical supplies and first aid equipment,purchase_order
+PO-78901 for warehouse shelving and storage solutions,purchase_order
+Capital purchase order for new delivery vehicles - 3 units,purchase_order
+Purchase order for employee uniforms and branded apparel,purchase_order
+PO #2024-3456 for kitchen equipment and break room supplies,purchase_order
+Emergency PO for air conditioning repair parts and components,purchase_order
+Purchase order for conference AV equipment and presentation tools,purchase_order
+Blanket PO for courier and shipping services - annual contract,purchase_order
+Purchase order #45678 for security cameras and access control system,purchase_order
+PO for landscaping services and outdoor maintenance equipment,purchase_order
+Purchase order for bulk fuel purchase - fleet vehicles,purchase_order
+Standing purchase order for water delivery and beverage services,purchase_order
+PO-23456 for office chairs and ergonomic workstation equipment,purchase_order
+Purchase order for industrial cleaning equipment and machinery,purchase_order
+Capital PO for CNC machine and manufacturing tools,purchase_order
+Purchase order #67890 for packaging materials and shipping supplies,purchase_order
+Blanket PO for legal services retainer - FY 2024,purchase_order
+Purchase order for telecommunications equipment upgrade,purchase_order
+PO for training materials and educational resources,purchase_order
+Emergency purchase order for generator and backup power equipment,purchase_order
+Purchase order #89012 for quality control testing equipment,purchase_order
+Standing PO for magazine and newspaper subscriptions,purchase_order
+Purchase order for employee recognition awards and trophies,purchase_order
+PO-34567 for data center cooling equipment and infrastructure,purchase_order
+Purchase order for mobile devices and accessories - sales team,purchase_order
+Your monthly bank statement for March 2024 is now available for review.,bank_statement
+Bank statement summary: 47 transactions processed with ending balance $12847.33,bank_statement
+Attached is your quarterly bank statement for accounts ending in 4521.,bank_statement
+Bank statement notification: unusual activity detected on your business account.,bank_statement
+Year-end bank statement with interest earned summary attached.,bank_statement
+Consolidated bank statement for all linked business accounts.,bank_statement
+Your e-statement for checking account is ready for download,bank_statement
+Monthly bank statement showing deposits and withdrawals and fees,bank_statement
+Business savings account statement - interest accrued this period: $234.56,bank_statement
+Bank statement alert: Your account balance fell below minimum threshold,bank_statement
+Reconciliation statement for corporate money market account,bank_statement
+Wire transfer confirmation included in your monthly statement,bank_statement
+Bank statement for business line of credit - available balance update,bank_statement
+Multi-currency account statement showing USD and EUR and GBP balances,bank_statement
+Statement of account for merchant services and payment processing,bank_statement
+Bank statement with itemized check images for your records,bank_statement
+Quarterly interest statement for business certificates of deposit,bank_statement
+Combined statement for all accounts under business banking relationship,bank_statement
+Bank statement showing automatic bill payments processed this month,bank_statement
+Account activity statement for corporate credit card transactions,bank_statement
+Bank statement for escrow account - real estate transaction,bank_statement
+Monthly statement for business platinum rewards credit card,bank_statement
+Bank account statement showing payroll deposits and distributions,bank_statement
+Statement summary: 23 credits and 45 debits with net change +$5432.10,bank_statement
+Your bank statement for investment brokerage linked account,bank_statement
+Consolidated monthly statement for treasury management accounts,bank_statement
+Bank statement notification: overdraft protection activated twice,bank_statement
+Commercial bank statement for operating account - high volume,bank_statement
+Statement for foreign currency exchange transactions this period,bank_statement
+Bank statement showing loan payment deductions and principal balance,bank_statement
+Monthly e-statement ready: Business Elite Checking Account,bank_statement
+Bank statement for trust account - fiduciary transactions detailed,bank_statement
+Account statement showing returned check and associated fees,bank_statement
+Bank statement for capital reserve account - quarterly summary,bank_statement
+Statement of account for lockbox payment processing services,bank_statement
+Monthly bank statement with fraud monitoring alerts included,bank_statement
+Commercial account statement - ACH transactions and wire activity,bank_statement
+Bank statement for petty cash replenishment account,bank_statement
+Quarterly statement for business money market savings account,bank_statement
+Bank statement showing sweep account transfers and balances,bank_statement
+Statement for controlled disbursement account - daily summary,bank_statement
+Monthly bank account statement - zero balance account activity,bank_statement
+Bank statement for healthcare flexible spending account,bank_statement
+Commercial statement showing positive pay check clearing details,bank_statement
+Account statement for employee expense reimbursement account,bank_statement
+Bank statement summary: ending balance $45678.90 as of month end,bank_statement
+Monthly statement for business deposit account with interest tiers,bank_statement
+Bank statement for vendor payment disbursement account,bank_statement
+Statement showing international wire transfers and conversion rates,bank_statement
+Tax Notice: Your estimated quarterly tax payment is due by April 15th.,tax_notice
+IRS Notice CP2000: Proposed changes to your 2023 tax return.,tax_notice
+State tax authority notice regarding outstanding balance on your account.,tax_notice
+Annual property tax assessment notice for fiscal year 2024-2025.,tax_notice
+Tax filing reminder: Extension deadline approaching for business returns.,tax_notice
+Notice of tax lien release for previously settled amounts.,tax_notice
+Sales tax audit notification - records requested for review period,tax_notice
+Payroll tax deposit reminder for quarterly federal taxes,tax_notice
+Notice of proposed adjustment to corporate income tax return,tax_notice
+State franchise tax annual report filing reminder,tax_notice
+VAT registration confirmation and compliance requirements notice,tax_notice
+Tax penalty assessment notice for late filing - appeal instructions enclosed,tax_notice
+Withholding tax reconciliation notice for calendar year 2023,tax_notice
+Property tax exemption application status update,tax_notice
+International tax treaty benefits claim acknowledgment,tax_notice
+Estimated tax underpayment penalty notice and calculation,tax_notice
+Business license tax renewal notice for the upcoming fiscal year,tax_notice
+Tax credit certification for research and development expenses,tax_notice
+Municipal tax assessment notice for commercial property,tax_notice
+Notice regarding changes to state tax withholding requirements,tax_notice
+IRS Form 941 quarterly employment tax reminder notice,tax_notice
+State income tax refund status notification - processing complete,tax_notice
+Property tax appeal hearing scheduled - documentation required,tax_notice
+Tax notice: Additional documentation needed for deduction claims,tax_notice
+Annual tax assessment for business personal property,tax_notice
+Notice of intent to levy for unpaid federal tax liability,tax_notice
+State sales tax exemption certificate renewal reminder,tax_notice
+Tax authority notice: Audit selection for fiscal year 2022,tax_notice
+Quarterly estimated tax voucher and payment instructions,tax_notice
+Notice of tax deficiency - response required within 30 days,tax_notice
+Property tax installment payment plan approval notification,tax_notice
+IRS Notice CP501: Balance due on your tax account,tax_notice
+State unemployment tax rate determination notice for next year,tax_notice
+Tax notice regarding foreign bank account reporting requirements,tax_notice
+Municipal business privilege tax assessment notice,tax_notice
+Notice of federal tax deposit penalty - corrective action needed,tax_notice
+Annual tax return acceptance confirmation from state authority,tax_notice
+Property tax senior citizen exemption eligibility notice,tax_notice
+Tax authority request for information regarding related party transactions,tax_notice
+Notice of proposed tax assessment increase - appeal deadline included,tax_notice
+Quarterly payroll tax reconciliation discrepancy notice,tax_notice
+State corporate tax extension approval confirmation,tax_notice
+IRS Notice CP2501: Unreported income identified on your return,tax_notice
+Property tax special assessment for infrastructure improvements,tax_notice
+Tax notice: Change of business address confirmation required,tax_notice
+Annual excise tax return filing reminder for fiscal year end,tax_notice
+Notice of tax credit carryforward available for next tax year,tax_notice
+State tax authority installment agreement approval letter,tax_notice
+Tax notice regarding mandatory electronic filing requirements,tax_notice
+Service Agreement Contract between ABC Corp and XYZ Consulting LLC.,contract
+Employment contract for the position of Senior Software Engineer.,contract
+Non-disclosure agreement for the upcoming product launch collaboration.,contract
+Lease contract renewal for office space at 123 Business Park Drive.,contract
+Master services agreement with amended payment terms.,contract
+Vendor contract for annual maintenance and support services.,contract
+Independent contractor agreement for freelance design services,contract
+Software licensing agreement for enterprise resource planning system,contract
+Partnership agreement between founding members of the joint venture,contract
+Distribution agreement granting exclusive rights for EMEA region,contract
+Consulting engagement letter outlining scope of work and deliverables,contract
+Subscription agreement for cloud-based project management platform,contract
+Asset purchase agreement for acquisition of business unit,contract
+Franchise agreement with operational guidelines and territory rights,contract
+Service level agreement defining uptime guarantees and support terms,contract
+Confidentiality agreement for due diligence process,contract
+Equipment lease agreement for office technology and machinery,contract
+Indemnification agreement for third-party software integration,contract
+Reseller agreement with pricing tiers and volume discounts,contract
+Amendment to existing contract extending term by 24 months,contract
+Subcontractor agreement for specialized construction services,contract
+Joint venture agreement for real estate development project,contract
+Intellectual property assignment agreement for work product,contract
+Terms and conditions agreement for e-commerce platform usage,contract
+Memorandum of understanding for strategic partnership exploration,contract
+Supply chain agreement with minimum order quantities and pricing,contract
+Professional services agreement for management consulting engagement,contract
+Technology transfer agreement for proprietary manufacturing process,contract
+Sponsorship agreement for annual industry conference event,contract
+Agency agreement appointing exclusive sales representative,contract
+Maintenance contract for building systems and infrastructure,contract
+Escrow agreement for software source code protection,contract
+Referral agreement with commission structure and payment terms,contract
+Co-branding agreement for joint marketing initiative,contract
+Data processing agreement compliant with GDPR requirements,contract
+Warranty agreement extending coverage for purchased equipment,contract
+Settlement agreement resolving commercial dispute between parties,contract
+Outsourcing contract for customer service operations,contract
+License agreement for use of patented technology,contract
+Hosting agreement for dedicated server infrastructure,contract
+Collaboration agreement for joint research and development,contract
+Commission agreement for sales performance incentives,contract
+Retainer agreement for ongoing legal advisory services,contract
+Framework agreement establishing terms for future orders,contract
+Termination agreement with mutual release of obligations,contract
+Novation agreement transferring contract rights to new party,contract
+Standstill agreement during merger negotiation period,contract
+Option agreement for future purchase of commercial property,contract
+Guarantee agreement for subsidiary company obligations,contract
+Pledge agreement for collateral securing loan facility,contract
+Thank you for contacting customer support. Your ticket #45892 has been resolved.,other
+Newsletter: Updates from our financial services team for Q2 2024.,other
+Reminder: Your account password will expire in 7 days.,other
+General correspondence regarding your recent inquiry about account features.,other
+Meeting notes from quarterly business review session.,other
+Internal memo regarding updated expense reporting procedures.,other
+Company announcement: New office location opening next quarter,other
+Training schedule for upcoming compliance certification program,other
+Feedback survey request for recent customer service interaction,other
+System maintenance notification - planned downtime this weekend,other
+Employee handbook updates effective from next fiscal year,other
+Invitation to annual shareholder meeting and proxy voting materials,other
+Press release announcing strategic partnership with technology firm,other
+Marketing brochure for new financial planning services,other
+Organizational chart update following recent restructuring,other
+Holiday schedule and office closure dates for upcoming year,other
+Welcome packet for new vendor onboarding process,other
+Agenda for upcoming board of directors meeting,other
+Customer satisfaction survey results and action plan summary,other
+Office relocation logistics and moving timeline communication,other
+Weekly team status report for project management review,other
+Company policy update regarding remote work guidelines,other
+IT security awareness training completion certificate,other
+Parking permit renewal application for employee lot,other
+Building access card activation confirmation email,other
+Employee referral program bonus notification,other
+Quarterly town hall meeting recording now available,other
+Office supply request form for department needs,other
+Conference room booking confirmation for client meeting,other
+Travel expense report submission reminder for month end,other
+New hire orientation schedule and checklist,other
+Department budget allocation for upcoming fiscal year,other
+Performance review schedule and self-assessment instructions,other
+Company picnic RSVP and event details announcement,other
+Printer maintenance scheduled for third floor equipment,other
+Lost and found notice for items left in conference room,other
+Cafeteria menu changes and new vendor announcement,other
+Recycling program update and new bin locations,other
+Emergency contact information update request,other
+Charity drive participation and donation matching program,other
+Office temperature adjustment request and HVAC schedule,other
+Visitor badge policy reminder for front desk procedures,other
+Employee birthday celebration schedule for this month,other
+Desk assignment changes for floor reorganization,other
+Mail room hours adjustment during holiday season,other
+Volunteer opportunity announcement for community service day,other
+Health and wellness program enrollment reminder,other
+Suggestion box feedback compilation and management response,other
+Dress code reminder for upcoming client visit,other
+Elevator maintenance notice and alternative access routes,other
